@@ -269,7 +269,6 @@ def ia_2():
 
         if 22 not in preenchtt and burro is False:
             n = 22
-            print('Meio')
         if n == 0:
             for u in range(0, len(lista)):
                 y = [p for p in lista[u] if p not in Player2.preench_j_2]
@@ -277,14 +276,12 @@ def ia_2():
                     j = y[0]
                     if j not in preenchtt:
                         n = j
-                        print('int 1')
             if burro:
                 while True:
                     t = opt[randint(0, len(opt) - 1)]
                     if t != j:
                         if t not in preenchtt:
                             n = t
-                            print('Burr 1')
                             break
         if n == 0:
             for u in range(0, len(lista)):
@@ -293,21 +290,18 @@ def ia_2():
                     j = y[0]
                     if j not in preenchtt:
                         n = j
-                        print('int 2')
             if burro:
                 while True:
                     t = opt[randint(0, len(opt) - 1)]
                     if t != j:
                         if t not in preenchtt:
                             n = t
-                            print('Burr 2')
                             break
         if n == 0:
             while True:
                 alea = randint(0, 8)
                 n = opt[alea]
                 if n not in preenchtt:
-                    print('Aleat')
                     break
 
         for p in range(0, 9):
